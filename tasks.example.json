@@ -1,0 +1,21 @@
+{
+  "next_id": 3,
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Finish SQL homework",
+      "description": "Complete the CTE exercises for the database course",
+      "status": "pending",
+      "deadline": "2026-08-01T18:00:00",
+      "created_at": "2026-07-15T09:00:00"
+    },
+    {
+      "id": 2,
+      "name": "Clean the kitchen",
+      "description": "Wipe counters, do dishes, take out trash",
+      "status": "done",
+      "deadline": "2026-07-18T20:00:00",
+      "created_at": "2026-07-16T10:30:00"
+    }
+  ]
+}
