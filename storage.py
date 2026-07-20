@@ -23,3 +23,11 @@ def load_data():
         shutil.copy("tasks.json", backup_name)
         print(f"Warning: tasks.json was unreadable. Backed up to {backup_name}. Starting with an empty list.")
         return 1, []
+    
+def save_data(next_id, tasks):
+    with open("tasks.json", "w") as f:
+        json.dump({
+            "next_id": next_id,
+            "tasks": [asdict(t) for t in tasks]
+        }, f, indent=2)
+        
